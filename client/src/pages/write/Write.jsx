@@ -50,7 +50,7 @@ export default function Write() {
                     />
                     <input
                         type="text"
-                        placeholder="Title..."
+                        placeholder="起个什么样的标题呢..."
                         className="writeInput"
                         autoFocus={true}
                         onChange={e => setTitle(e.target.value)}
@@ -58,13 +58,13 @@ export default function Write() {
                 </div>
                 <div className="writeFormGroup">
                     <textarea
-                        placeholder="Tell your story..."
+                        placeholder="写下你的想法吧..."
                         type="text"
                         className="writeInput writeText"
                         onChange={e => setDesc(e.target.value)}
                     />
                 </div>
-                <button className="writeSubmit" type="submit" >Publish</button>
+                <button className="writeSubmit" type="submit" >发布</button>
             </form>
         </div>
     )

@@ -28,24 +28,24 @@ export default function Register() {
         <div className="register">
             <span className="registerTitle">Register</span>
             <form className="registerForm" onSubmit={handleSubmit}>
-                <label>Username</label>
+                <label>用户名</label>
                 <input
                     onChange={e => setUsername(e.target.value)}
-                    className="registerInput" type="text" placeholder="username..." />
-                <label>Email</label>
+                    className="registerInput" type="text" placeholder="用户名..." />
+                <label>邮箱</label>
                 <input
                     onChange={e => setEmail(e.target.value)}
-                    className="registerInput" type="text" placeholder="email..." />
-                <label>Password</label>
+                    className="registerInput" type="text" placeholder="邮箱..." />
+                <label>密码</label>
                 <input
                     onChange={e => setPassword(e.target.value)}
-                    className="registerInput" type="password" placeholder="password..." />
-                <button className="registerButton" type="submit">Register</button>
+                    className="registerInput" type="password" placeholder="密码..." />
+                <button className="registerButton" type="submit">成为居民</button>
             </form>
             <button className="registerLoginButton">
-                <Link to="/login" className="link">Login</Link>
+                <Link to="/login" className="link">进入小屋</Link>
             </button>
-            {error && <span style={{ color: "red", marginTop: "10px" }}>SomeThing Went Wrong!</span>}
+            {error && <span style={{ color: "red", marginTop: "10px" }}>出错了哦~!</span>}
         </div>
     )
 }

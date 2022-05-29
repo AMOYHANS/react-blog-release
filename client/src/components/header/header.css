@@ -12,9 +12,9 @@
 }
 
 .headerTitleSm{
-    position: absolute;
+    /* position: absolute; */
     top: 18%;
-    font-size: 20px;
+    font-size: 40px;
 }
 
 .headerTitleLg{

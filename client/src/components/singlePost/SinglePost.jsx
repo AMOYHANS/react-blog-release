@@ -72,7 +72,7 @@ export default function SinglePost() {
                 }
                 <div className="singlePostInfo">
                     <span className="singlePostAu">
-                        Author:
+                        作者:
                         <Link className="link" to={`/?user=${post.username}`}>
                             <b>{post.username}</b>
                         </Link>
@@ -90,7 +90,7 @@ export default function SinglePost() {
                     </p>
                 }
                 {updateMode &&
-                    <button className="singlePostButton" onClick={handleUpdate}>Update</button>
+                    <button className="singlePostButton" onClick={handleUpdate}>更新</button>
                 }
             </div>
         </div>

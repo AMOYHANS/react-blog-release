@@ -21,19 +21,19 @@ export default function TopBar() {
             <div className="topCenter">
                 <ul className="topList">
                     <li className="topListItem">
-                        <Link to="/" className="link">HOME</Link>
+                        <Link to="/" className="link">小屋主页</Link>
                     </li>
                     <li className="topListItem">
-                        <Link to="/" className="link">ABOUT</Link>
+                        <Link to="/" className="link">关于小屋</Link>
                     </li>
                     <li className="topListItem">
-                        <Link to="/" className="link">CONTACT</Link>
+                        <Link to="/" className="link">联系我们</Link>
                     </li>
                     <li className="topListItem">
-                        <Link to="/write" className="link">WRITE</Link>
+                        <Link to="/write" className="link">推文创作</Link>
                     </li>
                     <li className="topListItem">
-                        <Link to="/" className="link" onClick={handleLogout}>{user && "LOGOUT"}</Link>
+                        <Link to="/" className="link" onClick={handleLogout} >{user && "退出登录"}</Link>
                     </li>
                 </ul>
             </div>
@@ -49,10 +49,10 @@ export default function TopBar() {
                     ) : (
                         <ul className="topList">
                             <li className="topListItem">
-                                <Link to="/login" className="link">LOGIN</Link>
+                                <Link to="/login" className="link">登录</Link>
                             </li>
                             <li className="topListItem">
-                                <Link to="/register" className="link">REGISTER</Link>
+                                <Link to="/register" className="link">注册</Link>
                             </li>
                         </ul>
                     )

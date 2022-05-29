@@ -25,18 +25,18 @@ export default function Login() {
 
     return (
         <div className="login">
-            <span className="loginTitle">Login</span>
+            <span className="loginTitle">登录</span>
             <form className="loginForm" onSubmit={handleSubmit}>
-                <label>Username</label>
-                <input ref={userRef} className="loginInput" type="text" placeholder="username..." />
-                <label>Password</label>
-                <input ref={passwordRef} className="loginInput" type="password" placeholder="password..." />
+                <label>用户名</label>
+                <input ref={userRef} className="loginInput" type="text" placeholder="用户名..." />
+                <label>密码</label>
+                <input ref={passwordRef} className="loginInput" type="password" placeholder="密码..." />
                 <button className="loginButton" type="submit" disabled={isFetching} >
-                    Login
+                    进入小屋
                 </button>
             </form>
             <button className="loginRegisterButton">
-                <Link to="/register" className="link">Register</Link>
+                <Link to="/register" className="link">成为居民</Link>
             </button>
         </div>
     )

@@ -18,7 +18,7 @@ export default function Sidebar() {
     return (
         <div className="sidebar">
             <div className="sidebarItem">
-                <span className="sidebarTitle">ABOUT ME</span>
+                <span className="sidebarTitle">我的头像</span>
                 <img
                     className="sidebarImg"
                     src={PF + (user.profilePic === "" ? "default.webp" : user.profilePic)}
@@ -29,7 +29,7 @@ export default function Sidebar() {
                 </p>
             </div>
             <div className="sidebarItem">
-                <span className="sidebarTitle">CATEGORIES</span>
+                <span className="sidebarTitle">分类</span>
                 <ul className="sidebarList">
                     {cats.map(c => (
                         <Link className="link" to={`/?cat=${c.name} `}>
@@ -39,7 +39,7 @@ export default function Sidebar() {
                 </ul>
             </div>
             <div className="sidebarItem">
-                <span className="sidebarTitle">FOLLOW US</span>
+                <span className="sidebarTitle">关注我们</span>
                 <div className="sidebarSocial">
                     <i className="sidebarIcon fa-brands fa-qq"></i>
                     <i className="sidebarIcon fa-brands fa-weixin"></i>
