@@ -31,15 +31,15 @@ export default function Register() {
                 <label>用户名</label>
                 <input
                     onChange={e => setUsername(e.target.value)}
-                    className="registerInput" type="text" placeholder="username..." />
+                    className="registerInput" type="text" placeholder="请输入用户名..." />
                 <label>邮箱</label>
                 <input
                     onChange={e => setEmail(e.target.value)}
-                    className="registerInput" type="text" placeholder="email..." />
+                    className="registerInput" type="text" placeholder="请输入邮箱..." />
                 <label>密码</label>
                 <input
                     onChange={e => setPassword(e.target.value)}
-                    className="registerInput" type="password" placeholder="password..." />
+                    className="registerInput" type="password" placeholder="请输入密码..." />
                 <button className="registerButton" type="submit">注册</button>
             </form>
             <button className="registerLoginButton">

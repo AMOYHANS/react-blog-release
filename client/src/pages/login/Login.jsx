@@ -28,9 +28,9 @@ export default function Login() {
             <span className="loginTitle">登录</span>
             <form className="loginForm" onSubmit={handleSubmit}>
                 <label>用户名</label>
-                <input ref={userRef} className="loginInput" type="text" placeholder="username..." />
+                <input ref={userRef} className="loginInput" type="text" placeholder="请输入用户名..." />
                 <label>密码</label>
-                <input ref={passwordRef} className="loginInput" type="password" placeholder="password..." />
+                <input ref={passwordRef} className="loginInput" type="password" placeholder="请输入密码..." />
                 <button className="loginButton" type="submit" disabled={isFetching} >
                     登录
                 </button>
