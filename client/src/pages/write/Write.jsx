@@ -64,7 +64,7 @@ export default function Write() {
                         onChange={e => setDesc(e.target.value)}
                     />
                 </div>
-                <button className="writeSubmit" type="submit" >Publish</button>
+                <button className="writeSubmit" type="submit" >发布</button>
             </form>
         </div>
     )

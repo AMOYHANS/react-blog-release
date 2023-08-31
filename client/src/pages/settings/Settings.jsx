@@ -47,11 +47,11 @@ export default function Settings() {
         <div className="settings">
             <div className="settingsWrapper">
                 <div className="settingsTitle">
-                    <span className="settingsUpdateTitle">Update Your Account</span>
-                    <span className="settingsDeleteTitle">Delete Account</span>
+                    <span className="settingsUpdateTitle">更新账户</span>
+                    <span className="settingsDeleteTitle">删除账户</span>
                 </div>
                 <form className="settingsForm" onSubmit={handleUpdate}>
-                    <label htmlFor="">Profile Picture</label>
+                    <label htmlFor="">首页照片</label>
                     <div className="settingsPP">
                         <img
                             src={file ? URL.createObjectURL(file) : PF + (user.profilePic === "" ? "default.webp" : user.profilePic)}
@@ -65,17 +65,17 @@ export default function Settings() {
                             onChange={e => setFile(e.target.files[0])}
                         />
                     </div>
-                    <label>Username</label>
+                    <label>用户名</label>
                     <input type="text" placeholder={username} onChange={e => setUsername(e.target.value)} />
-                    <label>Email</label>
+                    <label>邮箱</label>
                     <input type="email" placeholder={email} onChange={e => setEmail(e.target.value)} />
-                    <label>Password</label>
+                    <label>密码</label>
                     <input type="password" onChange={e => setPassword(e.target.value)} />
-                    <label>Desc</label>
+                    <label>简介</label>
                     <input type="text" onChange={e => setDesc(e.target.value)} />
-                    <button className="settingsSubmit" type="submit">Update</button>
+                    <button className="settingsSubmit" type="submit">更新</button>
                 </form>
-                {success && <span style={{ color: "coral", textAlign: "center", marginTop: "10px" }}>Updated Successfully!</span>}
+                {success && <span style={{ color: "coral", textAlign: "center", marginTop: "10px" }}>更新成功</span>}
             </div>
             <Sidebar />
         </div>
